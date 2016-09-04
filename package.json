@@ -1,0 +1,32 @@
+{
+  "name": "webdriverio-addons",
+  "version": "0.0.1",
+  "description": "Usefull tools for webdriver.io",
+  "dependencies": {
+    "cross-spawn": "^4.0.0",
+    "fs-extra": "^0.30.0",
+    "gm": "^1.23.0",
+    "mocha": "^3",
+    "node-xlsx": "*",
+    "sync-request": "*",
+    "uuid": "*",
+    "wdio-allure-reporter": "*",
+    "wdio-dot-reporter": "*",
+    "wdio-json-reporter": "*",
+    "wdio-junit-reporter": "*",
+    "wdio-mocha-framework": "*",
+    "wdio-selenium-standalone-service": "*",
+    "wdio-spec-reporter": "*",
+    "webdrivercss": "*",
+    "webdriverio": "*"
+  },
+  "devDependencies": {},
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evrycollin/webdriverio-addons"
+  },
+  "author": "Evry Collin",
+  "license": "ISC"
+}
