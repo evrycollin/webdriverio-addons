@@ -1,6 +1,6 @@
 {
   "name": "webdriverio-addons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Usefull tools for webdriver.io",
   "dependencies": {
     "cross-spawn": "^4.0.0",
