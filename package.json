@@ -1,6 +1,6 @@
 {
   "name": "webdriverio-addons",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Usefull tools for webdriver.io",
   "dependencies": {
     "cross-spawn": "^4.0.0",
@@ -28,5 +28,7 @@
     "url": "https://github.com/evrycollin/webdriverio-addons"
   },
   "author": "Evry Collin",
-  "license": "ISC"
+  "license": "ISC",
+  "main": "index.js"
+
 }
