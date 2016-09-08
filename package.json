@@ -1,7 +1,57 @@
 {
-  "name": "webdriverio-addons",
-  "version": "0.0.3",
-  "description": "Usefull tools for webdriver.io",
+  "_args": [
+    [
+      {
+        "raw": "webdriverio-addons@0.0.3",
+        "scope": null,
+        "escapedName": "webdriverio-addons",
+        "name": "webdriverio-addons",
+        "rawSpec": "0.0.3",
+        "spec": "0.0.3",
+        "type": "version"
+      },
+      "D:\\orchestra\\listedenaissance"
+    ]
+  ],
+  "_from": "webdriverio-addons@0.0.3",
+  "_id": "webdriverio-addons@0.0.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/webdriverio-addons",
+  "_nodeVersion": "4.4.7",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/webdriverio-addons-0.0.3.tgz_1473143137261_0.13983513205312192"
+  },
+  "_npmUser": {
+    "name": "evry.collin",
+    "email": "evry.collin@gmail.com"
+  },
+  "_npmVersion": "3.10.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "webdriverio-addons@0.0.3",
+    "scope": null,
+    "escapedName": "webdriverio-addons",
+    "name": "webdriverio-addons",
+    "rawSpec": "0.0.3",
+    "spec": "0.0.3",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/webdriverio-addons/-/webdriverio-addons-0.0.3.tgz",
+  "_shasum": "1285e288ab68fa64e94f428a6c270ebb59a30752",
+  "_shrinkwrap": null,
+  "_spec": "webdriverio-addons@0.0.3",
+  "_where": "D:\\orchestra\\listedenaissance",
+  "author": {
+    "name": "Evry Collin"
+  },
+  "bugs": {
+    "url": "https://github.com/evrycollin/webdriverio-addons/issues"
+  },
   "dependencies": {
     "cross-spawn": "^4.0.0",
     "fs-extra": "^0.30.0",
@@ -20,15 +70,30 @@
     "webdrivercss": "*",
     "webdriverio": "*"
   },
+  "description": "Usefull tools for webdriver.io",
   "devDependencies": {},
-  "scripts": {
+  "directories": {},
+  "dist": {
+    "shasum": "1285e288ab68fa64e94f428a6c270ebb59a30752",
+    "tarball": "https://registry.npmjs.org/webdriverio-addons/-/webdriverio-addons-0.0.3.tgz"
   },
+  "gitHead": "43d7908cf341bbf0b1acc1ecb06a4619823dbb0b",
+  "homepage": "https://github.com/evrycollin/webdriverio-addons#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "evry.collin",
+      "email": "evry.collin@gmail.com"
+    }
+  ],
+  "name": "webdriverio-addons",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "https://github.com/evrycollin/webdriverio-addons"
+    "url": "git+https://github.com/evrycollin/webdriverio-addons.git"
   },
-  "author": "Evry Collin",
-  "license": "ISC",
-  "main": "index.js"
-
+  "scripts": {},
+  "version": "0.0.3"
 }

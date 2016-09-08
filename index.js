@@ -1,43 +1,40 @@
 
+var tools = require('./lib/tools');
+var documentScreenshot = require('./lib/documentScreenshot');
+var common = require('./lib/common');
 
-var MyPlugin = function(webdriverInstance, options) {
+
+var WebdriverioAddOns = function(webdriverInstance, options) {
     options = options || {};
     
-    this.currentTest=null;
-
     if(!webdriverInstance) {
         throw new Error('A WebdriverIO instance is needed to initialise MyPlugin');
     }
     
-    //console.log('!!!!!!!!!!!!!!!!','MyPlugin','init');
+    this.instance = webdriverInstance;
     
-    webdriverInstance.addCommand('hello', function() {
-    
-      console.log('!!!!!!!!!!!!!!!!!!!!!!!', 'HELLO');
-    
-    } );
+    // from tools
+    this.instance.addCommand("takeElementScreenshot", tools.takeElementScreenshot.bind(this));
+    this.instance.addCommand("takeFullScreenshot", tools.takeFullScreenshot.bind(this));
+    this.instance.addCommand("assertVisual", tools.assertVisual.bind(this));
+    this.instance.addCommand("startStep", tools.startStep.bind(this));
+    this.instance.addCommand("doStep", tools.doStep.bind(this));
+    this.instance.addCommand("newStep", tools.startStep.bind(this));
+    this.instance.addCommand("testInfo", tools.testInfo.bind(this));
+    this.instance.addCommand("info", tools.info.bind(this));
+    this.instance.addCommand("error", tools.error.bind(this));
+    this.instance.addCommand("warning", tools.warning.bind(this));
+    this.instance.addCommand("attachFile", tools.attachFile.bind(this));
+    this.instance.addCommand("attachPng", tools.attachPng.bind(this));
+    this.instance.addCommand("showMessage", tools.showMessage.bind(this));
+    // from docScreenshot
+    this.instance.addCommand("documentScreenshot", documentScreenshot.bind(this));
     
     
     process.on('test:start', function(test) {
       browser.cid = test.cid;
     });    
-/*
-{
-	type: 'test: start',
-	title: 'home_check_title#fr_FR',
-	parent: 'com.ldn.home.fr_FR',
-	pending: false,
-	file: 'D: \\orchestra\\listedenaissance\\test\\specs\\home.js',
-	cid: '0a',
-	specs: ['D: \\orchestra\\listedenaissance\\test\\specs\\home.js'],
-	runner: {
-		'0a': {
-			maxInstances: 1,
-			browserName: 'chrome'
-		}
-	}
-}
-*/      
+  
 
 }
 
@@ -46,5 +43,8 @@ var MyPlugin = function(webdriverInstance, options) {
  * expose WebdriverCSS
  */
 module.exports.init = function(webdriverInstance, options) {
-    return new MyPlugin(webdriverInstance, options);
+    return new WebdriverioAddOns(webdriverInstance, options);
 };
+
+
+module.exports.common = common;
