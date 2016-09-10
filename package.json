@@ -68,7 +68,8 @@
     "wdio-selenium-standalone-service": "*",
     "wdio-spec-reporter": "*",
     "webdrivercss": "*",
-    "webdriverio": "*"
+    "webdriverio": "*",
+    "wdio-allure-addons-reporter": "0.0.4"
   },
   "description": "Usefull tools for webdriver.io",
   "devDependencies": {},
@@ -95,5 +96,5 @@
     "url": "git+https://github.com/evrycollin/webdriverio-addons.git"
   },
   "scripts": {},
-  "version": "0.0.3"
+  "version": "0.0.4"
 }

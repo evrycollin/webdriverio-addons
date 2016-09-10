@@ -2,7 +2,8 @@
 var tools = require('./lib/tools');
 var documentScreenshot = require('./lib/documentScreenshot');
 var common = require('./lib/common');
-
+var excelDataLoader = require('./lib/excel-data-loader');
+var browserTools = require('./lib/browser-tools');
 
 var WebdriverioAddOns = function(webdriverInstance, options) {
     options = options || {};
@@ -12,13 +13,13 @@ var WebdriverioAddOns = function(webdriverInstance, options) {
     }
     
     this.instance = webdriverInstance;
-    
+    tools.setConfig(options);
+    common.setConfig(options);
+        
     // from tools
-    this.instance.addCommand("takeElementScreenshot", tools.takeElementScreenshot.bind(this));
-    this.instance.addCommand("takeFullScreenshot", tools.takeFullScreenshot.bind(this));
-    this.instance.addCommand("assertVisual", tools.assertVisual.bind(this));
+    this.instance.addCommand("openFullscreen", tools.openFullscreen.bind(this));
+    this.instance.addCommand("openScreen", tools.openScreen.bind(this));
     this.instance.addCommand("startStep", tools.startStep.bind(this));
-    this.instance.addCommand("doStep", tools.doStep.bind(this));
     this.instance.addCommand("newStep", tools.startStep.bind(this));
     this.instance.addCommand("testInfo", tools.testInfo.bind(this));
     this.instance.addCommand("info", tools.info.bind(this));
@@ -47,4 +48,7 @@ module.exports.init = function(webdriverInstance, options) {
 };
 
 
+module.exports.tools = tools;
 module.exports.common = common;
+module.exports.excelDataLoader = excelDataLoader;
+module.exports.browserTools = browserTools;
