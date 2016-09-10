@@ -96,5 +96,5 @@
     "url": "git+https://github.com/evrycollin/webdriverio-addons.git"
   },
   "scripts": {},
-  "version": "0.0.4"
+  "version": "0.0.5"
 }
