@@ -11,41 +11,53 @@
         "type": "version"
       },
       "D:\\orchestra\\listedenaissance"
+    ],
+    [
+      {
+        "raw": "webdriverio-addons@0.0.7",
+        "scope": null,
+        "escapedName": "webdriverio-addons",
+        "name": "webdriverio-addons",
+        "rawSpec": "0.0.7",
+        "spec": "0.0.7",
+        "type": "version"
+      },
+      "D:\\Orchestra\\WAT\\projects\\demo"
     ]
   ],
-  "_from": "webdriverio-addons@0.0.3",
-  "_id": "webdriverio-addons@0.0.3",
+  "_from": "webdriverio-addons@0.0.7",
+  "_id": "webdriverio-addons@0.0.7",
   "_inCache": true,
   "_installable": true,
   "_location": "/webdriverio-addons",
   "_nodeVersion": "4.4.7",
   "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/webdriverio-addons-0.0.3.tgz_1473143137261_0.13983513205312192"
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/webdriverio-addons-0.0.7.tgz_1474287746559_0.4918629939202219"
   },
   "_npmUser": {
     "name": "evry.collin",
     "email": "evry.collin@gmail.com"
   },
-  "_npmVersion": "3.10.5",
+  "_npmVersion": "3.10.2",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "webdriverio-addons@0.0.3",
+    "raw": "webdriverio-addons@0.0.7",
     "scope": null,
     "escapedName": "webdriverio-addons",
     "name": "webdriverio-addons",
-    "rawSpec": "0.0.3",
-    "spec": "0.0.3",
+    "rawSpec": "0.0.7",
+    "spec": "0.0.7",
     "type": "version"
   },
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/webdriverio-addons/-/webdriverio-addons-0.0.3.tgz",
-  "_shasum": "1285e288ab68fa64e94f428a6c270ebb59a30752",
+  "_resolved": "https://registry.npmjs.org/webdriverio-addons/-/webdriverio-addons-0.0.7.tgz",
+  "_shasum": "513b4ec142a4b3cb77eccabc60b18371cd3d6777",
   "_shrinkwrap": null,
-  "_spec": "webdriverio-addons@0.0.3",
-  "_where": "D:\\orchestra\\listedenaissance",
+  "_spec": "webdriverio-addons@0.0.7",
+  "_where": "D:\\Orchestra\\WAT\\projects\\demo",
   "author": {
     "name": "Evry Collin"
   },
@@ -61,6 +73,8 @@
     "node-xlsx": "*",
     "sync-request": "*",
     "uuid": "*",
+    "selenium-standalone": "^5.6.0",
+    "wdio-allure-addons-reporter": "0.0.4",
     "wdio-allure-reporter": "*",
     "wdio-dot-reporter": "*",
     "wdio-json-reporter": "*",
@@ -68,15 +82,14 @@
     "wdio-mocha-framework": "*",
     "wdio-selenium-standalone-service": "*",
     "wdio-spec-reporter": "*",
-    "webdriverio": "*",
-    "wdio-allure-addons-reporter": "0.0.4"
+    "webdriverio": "*"
   },
   "description": "Usefull tools for webdriver.io",
   "devDependencies": {},
   "directories": {},
   "dist": {
-    "shasum": "1285e288ab68fa64e94f428a6c270ebb59a30752",
-    "tarball": "https://registry.npmjs.org/webdriverio-addons/-/webdriverio-addons-0.0.3.tgz"
+    "shasum": "513b4ec142a4b3cb77eccabc60b18371cd3d6777",
+    "tarball": "https://registry.npmjs.org/webdriverio-addons/-/webdriverio-addons-0.0.7.tgz"
   },
   "gitHead": "43d7908cf341bbf0b1acc1ecb06a4619823dbb0b",
   "homepage": "https://github.com/evrycollin/webdriverio-addons#readme",
@@ -96,5 +109,5 @@
     "url": "git+https://github.com/evrycollin/webdriverio-addons.git"
   },
   "scripts": {},
-  "version": "0.0.7"
+  "version": "0.0.8"
 }

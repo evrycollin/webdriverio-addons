@@ -1,7 +1,7 @@
 
-var common = require('../lib/webdriverio-addons').common;
+var common = require('../lib/common');
 
-exports.config = {
+module.exports = {
     //
     // =====================
     // Server Configurations
