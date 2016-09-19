@@ -5,6 +5,7 @@ var common = require('./lib/common');
 var excelDataLoader = require('./lib/excel-data-loader');
 var browserTools = require('./lib/browser-tools');
 var elasticSearchReporter = require('./lib/elasticsearch-reporter');
+var defaultConfig = require('./conf/wdio.conf.js');
 
 var WebdriverioAddOns = function(webdriverInstance, options) {
     options = options || {};
@@ -54,3 +55,4 @@ module.exports.common = common;
 module.exports.excelDataLoader = excelDataLoader;
 module.exports.browserTools = browserTools;
 module.exports.elasticSearchReporter = elasticSearchReporter;
+module.exports.defaultConfig = defaultConfig;
