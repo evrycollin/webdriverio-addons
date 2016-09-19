@@ -53,6 +53,7 @@
     "url": "https://github.com/evrycollin/webdriverio-addons/issues"
   },
   "dependencies": {
+    "allure-commandline": "*",
     "cross-spawn": "^4.0.0",
     "fs-extra": "^0.30.0",
     "gm": "^1.23.0",
@@ -67,7 +68,6 @@
     "wdio-mocha-framework": "*",
     "wdio-selenium-standalone-service": "*",
     "wdio-spec-reporter": "*",
-    "webdrivercss": "*",
     "webdriverio": "*",
     "wdio-allure-addons-reporter": "0.0.4"
   },
