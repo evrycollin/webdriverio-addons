@@ -79,6 +79,19 @@ WAT.testsuite( ['home',lang.code], function() {
 });
 ```
 
+### Browser addons commands
+- openFullscreen
+- openScreen
+- startStep
+- testInfo
+- info
+- error
+- warning
+- attachFile
+- attachPng
+- showMessage
+- documentScreenshot
+
 ### Step API
 
 Allow developer to write its test with hierarchical logging context
