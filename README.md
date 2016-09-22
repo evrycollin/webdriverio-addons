@@ -130,13 +130,17 @@ function (context) {
 - wait 
 
 ### Screenshot tools & Visual integration test
+
+```javascript
+var tools = require('webdriverio-addons').tools;
+```
+
 Allow tester to get a fullscreen screenshot even if the underlying WebDriver only returns a viewport screenshot ( like Chrome )
-- takeFullScreenshot: function (title, step, hideSelectors)
+- takeFullScreenshot
 
 Like webdriver-css plugin, but working with webdriver.io v4
-- takeElementScreenshot: function( options ) 
-- assertVisual : function( refScreenshot, options ) 
-
+- takeElementScreenshot 
+- assertVisual 
 
 
 ### Splash screen
