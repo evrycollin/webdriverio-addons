@@ -111,7 +111,23 @@ function (context) {
 - openFullscreen 
 - openScreen 
 - showMessage
-
+- ok, passed 
+- ko, failed
+- broken
+- cancel 
+- error 
+- assertEqual 
+- assertVisible 
+- assertVisual 
+- url 
+- submitForm 
+- setValue 
+- click 
+- scroll 
+- selectByValue 
+- fullscreen 
+- takeFullScreenshot 
+- wait 
 
 ### Screenshot tools & Visual integration test
 Allow tester to get a fullscreen screenshot even if the underlying WebDriver only returns a viewport screenshot ( like Chrome )
