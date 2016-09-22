@@ -112,3 +112,14 @@ Like webdriver-css plugin, but working with webdriver.io v4
 - before test meta data
 - after test with results
 
+## Create project
+The Webdriverio-addons npm module will get all dependencies you need to make test running on you computer
+
+```bash
+# create new NodeJS project
+$ mkdir myProject
+$ cd myProject
+$ npm init
+$ npm install --save
+```
+
