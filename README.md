@@ -100,13 +100,28 @@ function (context) {
 
 }
 ```
+#### Details
+- startStep
+- testInfo
+- info
+- error
+- warning
+- attachPng
+- attachFile
+- openFullscreen 
+- openScreen 
+- showMessage
 
-### Screenshot tools
+
+### Screenshot tools & Visual integration test
 Allow tester to get a fullscreen screenshot even if the underlying WebDriver only returns a viewport screenshot ( like Chrome )
-
-### Visual integration test
+- takeFullScreenshot: function (title, step, hideSelectors)
 
 Like webdriver-css plugin, but working with webdriver.io v4
+- takeElementScreenshot: function( options ) 
+- assertVisual : function( refScreenshot, options ) 
+
+
 
 ### Splash screen
 - before test meta data
