@@ -115,6 +115,23 @@ Like webdriver-css plugin, but working with webdriver.io v4
 ## Create project
 The Webdriverio-addons npm module will get all dependencies you need to make test running on you computer
 
+### Dependencies
+- webdriverio
+- mocha
+- selenium-standalone
+- allure-cli
+- wdio-allure-reporter
+- wdio-allure-addons-reporter
+- wdio-dot-reporter
+- wdio-json-reporter
+- wdio-junit-reporter
+- wdio-mocha-framework
+- wdio-selenium-standalone-service
+- wdio-spec-reporter
+
+
+- graphicsmagics
+
 ```bash
 # create new NodeJS project
 $ mkdir myProject
