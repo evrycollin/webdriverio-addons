@@ -30,7 +30,7 @@ module.exports = require('deepmerge')(
     // Level of logging verbosity: silent | verbose | command | data | result | error
     logLevel: 'silent',
 
-    baseUrl: 'http://preprod-birthlist.orchestra.cc',
+    baseUrl: 'http://www.google.com',
 
     host: 'localhost',
     port: 4444,
@@ -170,6 +170,7 @@ See http://www.GraphicsMagick.org/www/Copyright.html for details.
 - wdio-selenium-standalone-service
 - wdio-spec-reporter
 
+### Start new NPM project
 
 ```bash
 # create new NodeJS project
@@ -178,4 +179,32 @@ $ cd myProject
 $ npm init
 $ npm install --save
 ```
+### Create your `wdio` configuration
 
+### Create your first spec
+
+### Cleanup
+```bash
+# cleanup working folders
+rm -f -R ./allure-results
+rm -f -R ./screenshots
+rm -f -R ./outputDir
+rm -f -R ./errorShots
+rm -f -R ./allure-report
+```
+
+### Run tests
+
+```bash
+./node_modules/.bin/wdio myConf.wdio.js
+```
+
+### Generate Allure report
+
+```bash
+# generates allure report ( angularjs webapp )
+./node_modules/.bin/allure generate ./allure-results -o ./allure-report
+
+# start a webServer and open browser to see report
+./node_modules/.bin/allure report open -o ./allure-report
+```
