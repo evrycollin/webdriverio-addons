@@ -115,11 +115,52 @@ Like webdriver-css plugin, but working with webdriver.io v4
 ## Create project
 The Webdriverio-addons npm module will get all dependencies you need to make test running on you computer
 
+### Requirements
+- [Git](https://git-scm.com/)
+```bash
+$ apt-get install git
+...
+$ git --version
+git version 1.9.1
+```
+
+- [NodeJS](https://nodejs.org/en/download/)
+
+```bash
+$ apt-get install nodejs-legacy npm
+...
+$ nodejs --version
+v0.10.25
+$ npm --version
+1.3.10
+```
+- [Java](http://www.oracle.com/technetwork/java/javase/downloads/index.html) 
+
+```bash
+$ apt-get install default-jre
+...
+$ java -version
+OpenJDK Runtime Environment (IcedTea 2.6.7) (7u111-2.6.7-0ubuntu0.14.04.3)
+OpenJDK 64-Bit Server VM (build 24.111-b01, mixed mode)
+```
+- [GrphicsMagick](http://www.graphicsmagick.org/)
+
+```bash
+$ apt-get install graphicsmagick
+...
+$ gm
+GraphicsMagick 1.3.18 2013-03-10 Q8 http://www.GraphicsMagick.org/
+Copyright (C) 2002-2013 GraphicsMagick Group.
+Additional copyrights and licenses apply to this software.
+See http://www.GraphicsMagick.org/www/Copyright.html for details.
+```
+
 ### Dependencies
 - webdriverio
 - mocha
 - selenium-standalone
 - allure-cli
+- graphicsmagics
 - wdio-allure-reporter
 - wdio-allure-addons-reporter
 - wdio-dot-reporter
@@ -129,8 +170,6 @@ The Webdriverio-addons npm module will get all dependencies you need to make tes
 - wdio-selenium-standalone-service
 - wdio-spec-reporter
 
-
-- graphicsmagics
 
 ```bash
 # create new NodeJS project
