@@ -286,6 +286,9 @@ put attachments
             "type": "string",
             "index":    "not_analyzed"
           },
+          "size": {
+            "type": "long"
+          },          
           "step": {
             "type": "string",
             "index":    "not_analyzed"
