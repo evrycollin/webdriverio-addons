@@ -66,6 +66,7 @@
   },
   "dependencies": {
     "allure-commandline": "*",
+    "dateformat": "^1.0.12",
     "cross-spawn": "^4.0.0",
     "fs-extra": "^0.30.0",
     "gm": "^1.23.0",
@@ -110,5 +111,5 @@
     "url": "git+https://github.com/evrycollin/webdriverio-addons.git"
   },
   "scripts": {},
-  "version": "0.0.9"
+  "version": "0.0.10"
 }
