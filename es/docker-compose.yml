@@ -1,3 +1,8 @@
+###############
+# Elastic Search
+###############
+# http://[vps213987.ovh.net]:9200/
+###############
 elasticsearch:
   image: elasticsearch:latest
   container_name: elasticsearch
@@ -11,8 +16,24 @@ elasticsearch:
   log_driver: "json-file"
   log_opt:
     max-size: "1m"
-    max-file: "2"
-    
+    max-file: "2" 
+
+###############
+# ElasticSearch install head plugin
+###############
+# $   docker exec -ti elasticsearch bash
+# $   ./bin/plugin install mobz/elasticsearch-head
+# $   exit
+###############
+# http://[vps213987.ovh.net]:9200/_plugin/head/
+###############
+
+   
+###############
+# KIBANA
+###############
+# http://[vps213987.ovh.net]:9200/app/kibana/
+###############
 kibana:
   image: kibana:latest
   container_name: kibana
@@ -28,13 +49,13 @@ kibana:
     max-size: "1m"
     max-file: "2"
 
-# ElasticSearch install head plugin
-# $   docker exec -ti elasticsearch bash
-# $   ./bin/plugin install mobz/elasticsearch-head
-# $   exit
-
+###############
 # Kibana install sense plugin
+###############
 # $   docker exec -ti kibana bash
 # $   cd /opt/kibana/ 
 # $   ./bin/kibana plugin --install elastic/sense
 # $   exit
+###############
+# http://[vps213987.ovh.net]:5601/app/sense/
+###############
