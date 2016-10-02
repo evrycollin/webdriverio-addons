@@ -20,12 +20,15 @@ echo ""
 
 echo "# Create index : campaigns$INDEX_SUFFIX"
 curl -X PUT -H "Content-Type: application/json" --data @mappings/campaigns.json $ES_URL/campaigns$INDEX_SUFFIX
+echo ""
 
 echo "# Create index : testcases$INDEX_SUFFIX"
 curl -X PUT -H "Content-Type: application/json" --data @mappings/testcases.json $ES_URL/testcases$INDEX_SUFFIX
+echo ""
 
 echo "# Create index : logs$INDEX_SUFFIX"
 curl -X PUT -H "Content-Type: application/json" --data @mappings/logs.json $ES_URL/logs$INDEX_SUFFIX
+echo ""
 
 echo ""
 echo "Done."
