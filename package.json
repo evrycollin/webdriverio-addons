@@ -73,6 +73,7 @@
     "node-xlsx": "*",
     "sync-request": "*",
     "uuid": "*",
+    "sync-request": "^3.0.1",
     "selenium-standalone": "^5.6.0",
     "wdio-allure-addons-reporter": "0.0.4",
     "wdio-allure-reporter": "*",

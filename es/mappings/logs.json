@@ -1,0 +1,87 @@
+{
+	"mappings": {
+		"log": {
+			"properties": {
+				"campaign": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"cid": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"dateTime": {
+					"type": "date",
+					"format": "strict_date_optional_time||epoch_millis"
+				},
+				"detail": {
+					"properties": {
+						"pageSize": {
+							"properties": {
+								"height": {
+									"type": "long"
+								},
+								"width": {
+									"type": "long"
+								}
+							}
+						},
+						"screenshotSize": {
+							"properties": {
+								"height": {
+									"type": "long"
+								},
+								"width": {
+									"type": "long"
+								}
+							}
+						},
+						"selector": {
+							"type": "string"
+						},
+						"timeout": {
+							"type": "long"
+						},
+						"url": {
+							"type": "string"
+						}
+					}
+				},
+				"event": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"file": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"message": {
+					"type": "string"
+				},
+				"size": {
+					"type": "long"
+				},
+				"status": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"step": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"test": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"type": {
+					"type": "string",
+					"index": "not_analyzed"
+				},
+				"uuid": {
+					"type": "string",
+					"index": "not_analyzed"
+				}
+			}
+		}
+	}
+}

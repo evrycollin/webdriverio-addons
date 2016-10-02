@@ -9,6 +9,10 @@ put campaigns
             "type": "date",
             "format": "strict_date_optional_time||epoch_millis"
           },
+          "campaignName": {
+              "type": "string",
+              "index":    "not_analyzed"
+          },
           "result": {
             "properties": {
               "totalFailed": {
@@ -147,10 +151,6 @@ put testcases
           "pending": {
             "type": "boolean"
           },
-          "specHash": {
-            "type": "string",
-            "index":    "not_analyzed"
-          },
           "specs": {
             "type": "string",
             "index":    "not_analyzed"
@@ -235,70 +235,26 @@ put logs
             "type": "string",
              "index":    "not_analyzed"
           },
-          "message": {
-            "type": "string"
-          },
-          "status": {
-            "type": "string",
-             "index":    "not_analyzed"
-          },
-          "step": {
-            "type": "string",
-             "index":    "not_analyzed"
-          },
-          "test": {
-            "type": "string",
-             "index":    "not_analyzed"
-          },
-          "uuid": {
-            "type": "string",
-             "index":    "not_analyzed"
-          }
-        }
-      }
-    }
-  }
-
-delete attachments
-put attachments 
-{
-    "mappings": {
-      "attachment": {
-        "properties": {
-          "campaign": {
-            "type": "string",
-            "index":    "not_analyzed"
-          },
-          "cid": {
-            "type": "string",
-            "index":    "not_analyzed"
-          },
-          "content": {
-            "type": "string",
-            "index":    "no"
-
-          },
-          "dateTime": {
-            "type": "date",
-            "format": "strict_date_optional_time||epoch_millis"
-          },
           "file": {
             "type": "string",
             "index":    "not_analyzed"
           },
+          "message": {
+            "type": "string"
+          },
           "size": {
             "type": "long"
-          },          
+          },           "status": {
+            "type": "string",
+             "index":    "not_analyzed"
+          },
           "step": {
             "type": "string",
-            "index":    "not_analyzed"
+             "index":    "not_analyzed"
           },
           "test": {
             "type": "string",
-            "index":    "not_analyzed"
-          },
-          "title": {
-            "type": "string"
+             "index":    "not_analyzed"
           },
           "type": {
             "type": "string",
@@ -306,11 +262,9 @@ put attachments
           },
           "uuid": {
             "type": "string",
-            "index":    "not_analyzed"
+             "index":    "not_analyzed"
           }
         }
       }
     }
   }
-
-
