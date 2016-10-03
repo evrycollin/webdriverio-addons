@@ -59,3 +59,20 @@ kibana:
 ###############
 # http://[vps213987.ovh.net]:5601/app/sense/
 ###############
+
+logstash:
+  image: logstash:latest
+  container_name: logstash
+  ports:
+  - "8080:8080"
+  links:
+  - elasticsearch
+  volumes:
+  - /etc/localtime:/etc/localtime
+  - ./logstash/logstash.conf:/logstash.conf
+  command: -f /logstash.conf
+  log_driver: "json-file"
+  log_opt:
+    max-size: "1m"
+    max-file: "2"
+  
