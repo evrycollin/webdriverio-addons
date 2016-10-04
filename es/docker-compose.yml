@@ -9,8 +9,12 @@ elasticsearch:
   command: elasticsearch -Des.network.host=0.0.0.0
   ports:
   - "9200:9200"
+  environment:
+    - ES_HEAP_SIZE=1g
   volumes:
   - /etc/localtime:/etc/localtime
+  - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+  - ./elasticsearch/config/logging.yml:/usr/share/elasticsearch/config/logging.yml
   - ./elasticsearch/data:/usr/share/elasticsearch/data
   - ./elasticsearch/plugins:/usr/share/elasticsearch/plugins
   log_driver: "json-file"
@@ -43,6 +47,7 @@ kibana:
   - elasticsearch
   volumes:
   - /etc/localtime:/etc/localtime
+  - ./kibana/config/kibana.yml:/opt/kibana/config/kibana.yml
   - ./kibana/installedPlugins:/opt/kibana/installedPlugins
   log_driver: "json-file"
   log_opt:
@@ -64,7 +69,7 @@ logstash:
   image: logstash:latest
   container_name: logstash
   ports:
-  - "8080:8080"
+  - "9100:9100"
   links:
   - elasticsearch
   volumes:
